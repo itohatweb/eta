@@ -8,7 +8,7 @@ import type { EtaConfig, PartialConfig } from "./config.ts";
 import type { CallbackFn } from "./file-handlers.ts";
 import { getAsyncFunctionConstructor } from "./polyfills.ts";
 export type TemplateFunction = (
-  data: object,
+  data: Record<string, unknown>,
   config: EtaConfig,
   cb?: CallbackFn,
 ) => string;
